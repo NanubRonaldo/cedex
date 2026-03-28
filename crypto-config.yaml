@@ -1,0 +1,20 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: cedex.com
+    Specs:
+      - Hostname: orderer
+
+PeerOrgs:
+  - Name: Insurer
+    Domain: insurer.cedex.com
+    Template:
+      Count: 1
+    Users:
+      Count: 1
+
+  - Name: Lender
+    Domain: lender.cedex.com
+    Template:
+      Count: 1
+    Users:
+      Count: 1

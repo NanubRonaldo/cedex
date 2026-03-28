@@ -1,0 +1,34 @@
+{
+  "docs": [
+    {
+      "_id": "POL-2024-001",
+      "type": "Policy",
+      "publicData": {
+        "policyId": "POL-2024-001",
+        "holderName": "John Mwatile",
+        "holderId": "PH-001",
+        "insurer": "Momentum Namibia",
+        "productType": "Life Cover",
+        "totalValue": 300000,
+        "availableValue": 271000,
+        "cededValue": 29000,
+        "status": "active",
+        "totalCessions": 1,
+        "activeCessions": 1
+      }
+    },
+    {
+      "_id": "CES-2024-001",
+      "type": "CessionToken",
+      "publicData": {
+        "tokenId": "CT-2024-001",
+        "policyId": "POL-2024-001",
+        "amount": 29000,
+        "priorityRank": 1,
+        "status": "active",
+        "lifeCoverPortion": 23200,
+        "retrenchmentPortion": 5800
+      }
+    }
+  ]
+}

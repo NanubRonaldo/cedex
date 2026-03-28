@@ -1,0 +1,89 @@
+{
+  "name": "cedex-network",
+  "version": "1.0.0",
+  "client": {
+    "organization": "InsurerMSP",
+    "connection": {
+      "timeout": {
+        "peer": {
+          "endorser": "300"
+        }
+      }
+    }
+  },
+  "organizations": {
+    "InsurerMSP": {
+      "mspid": "InsurerMSP",
+      "peers": ["peer0.insurer.cedex.com"],
+      "certificateAuthorities": ["ca.insurer.cedex.com"]
+    },
+    "LenderMSP": {
+      "mspid": "LenderMSP",
+      "peers": ["peer0.lender.cedex.com"],
+      "certificateAuthorities": ["ca.lender.cedex.com"]
+    }
+  },
+  "peers": {
+    "peer0.insurer.cedex.com": {
+      "url": "grpcs://localhost:7051",
+      "tlsCACerts": {
+        "path": "./crypto-config/peerOrganizations/insurer.cedex.com/peers/peer0.insurer.cedex.com/tls/ca.crt"
+      },
+      "grpcOptions": {
+        "ssl-target-name-override": "peer0.insurer.cedex.com",
+        "hostnameOverride": "peer0.insurer.cedex.com"
+      }
+    },
+    "peer0.lender.cedex.com": {
+      "url": "grpcs://localhost:9051",
+      "tlsCACerts": {
+        "path": "./crypto-config/peerOrganizations/lender.cedex.com/peers/peer0.lender.cedex.com/tls/ca.crt"
+      },
+      "grpcOptions": {
+        "ssl-target-name-override": "peer0.lender.cedex.com",
+        "hostnameOverride": "peer0.lender.cedex.com"
+      }
+    }
+  },
+  "orderers": {
+    "orderer.cedex.com": {
+      "url": "grpcs://localhost:7050",
+      "tlsCACerts": {
+        "path": "./crypto-config/ordererOrganizations/cedex.com/orderers/orderer.cedex.com/tls/ca.crt"
+      },
+      "grpcOptions": {
+        "ssl-target-name-override": "orderer.cedex.com",
+        "hostnameOverride": "orderer.cedex.com"
+      }
+    }
+  },
+  "certificateAuthorities": {
+    "ca.insurer.cedex.com": {
+      "url": "http://localhost:7054",
+      "caName": "ca.insurer.cedex.com"
+    },
+    "ca.lender.cedex.com": {
+      "url": "http://localhost:8054",
+      "caName": "ca.lender.cedex.com"
+    }
+  },
+  "channels": {
+    "cessionchannel": {
+      "orderers": ["orderer.cedex.com"],
+      "peers": {
+        "peer0.insurer.cedex.com": {
+          "endorsingPeer": true,
+          "chaincodeQuery": true,
+          "ledgerQuery": true,
+          "eventSource": true
+        },
+        "peer0.lender.cedex.com": {
+          "endorsingPeer": true,
+          "chaincodeQuery": true,
+          "ledgerQuery": true,
+          "eventSource": true
+        }
+      }
+    }
+  }
+}

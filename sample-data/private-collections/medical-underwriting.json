@@ -1,0 +1,114 @@
+{
+  "docs": [
+    {
+      "_id": "medical_UND-001",
+      "policyID": "POL-2024-001",
+      "collection": "MedicalUnderwriting",
+      "data": {
+        "policyholderID": "PH-001",
+        "preExistingConditions": ["Hypertension (controlled)", "Type 2 Diabetes (early stage)"],
+        "currentMedications": ["Lisinopril 10mg", "Metformin 500mg"],
+        "smokingStatus": "Non-smoker (quit 2018)",
+        "alcoholConsumption": "Social (1-2 drinks/week)",
+        "bmi": 27.5,
+        "underwritingClass": "Standard",
+        "mortalityRating": 125,
+        "riskScore": 0.65,
+        "lastMedicalExam": "2024-01-05",
+        "examResultsHash": "5a4d3c2b1e0f9a8b7c6d5e4f3a2b1c0d",
+        "attendingPhysician": "Dr. Anna Nel, MediClinic Windhoek",
+        "consentDate": "2024-01-10",
+        "consentExpiry": "2029-01-10"
+      },
+      "timestamp": "2024-01-12T08:00:00Z"
+    },
+    {
+      "_id": "medical_UND-002",
+      "policyID": "POL-2024-002",
+      "collection": "MedicalUnderwriting",
+      "data": {
+        "policyholderID": "PH-002",
+        "preExistingConditions": [],
+        "currentMedications": [],
+        "smokingStatus": "Never smoked",
+        "alcoholConsumption": "None",
+        "bmi": 22.1,
+        "underwritingClass": "Preferred",
+        "mortalityRating": 90,
+        "riskScore": 0.35,
+        "lastMedicalExam": "2024-02-10",
+        "examResultsHash": "8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b",
+        "attendingPhysician": "Dr. Elisa van Wyk, Roman Catholic Hospital",
+        "consentDate": "2024-02-15",
+        "consentExpiry": "2029-02-15"
+      },
+      "timestamp": "2024-02-18T10:30:00Z"
+    },
+    {
+      "_id": "medical_UND-003",
+      "policyID": "POL-2024-003",
+      "collection": "MedicalUnderwriting",
+      "data": {
+        "policyholderID": "PH-003",
+        "preExistingConditions": ["Asthma (mild, controlled)"],
+        "currentMedications": ["Salbutamol inhaler (as needed)"],
+        "smokingStatus": "Never smoked",
+        "alcoholConsumption": "Moderate (3-5 drinks/week)",
+        "bmi": 24.8,
+        "underwritingClass": "Standard",
+        "mortalityRating": 115,
+        "riskScore": 0.55,
+        "lastMedicalExam": "2024-03-01",
+        "examResultsHash": "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d",
+        "attendingPhysician": "Dr. Francois Louw, Welwitschia Private Hospital",
+        "consentDate": "2024-03-05",
+        "consentExpiry": "2029-03-05"
+      },
+      "timestamp": "2024-03-08T14:20:00Z"
+    },
+    {
+      "_id": "medical_UND-004",
+      "policyID": "POL-2024-004",
+      "collection": "MedicalUnderwriting",
+      "data": {
+        "policyholderID": "PH-004",
+        "preExistingConditions": ["Chronic Back Pain", "Obesity"],
+        "currentMedications": ["Ibuprofen 400mg"],
+        "smokingStatus": "Current smoker (10-15/day)",
+        "alcoholConsumption": "Heavy (10+ drinks/week)",
+        "bmi": 34.2,
+        "underwritingClass": "Substandard",
+        "mortalityRating": 250,
+        "riskScore": 1.85,
+        "lastMedicalExam": "2024-03-20",
+        "examResultsHash": "9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c",
+        "attendingPhysician": "Dr. Lukas Haingura, Onandjokwe Hospital",
+        "consentDate": "2024-03-25",
+        "consentExpiry": "2029-03-25"
+      },
+      "timestamp": "2024-03-28T09:15:00Z"
+    },
+    {
+      "_id": "medical_UND-005",
+      "policyID": "POL-2024-005",
+      "collection": "MedicalUnderwriting",
+      "data": {
+        "policyholderID": "PH-005",
+        "preExistingConditions": [],
+        "currentMedications": [],
+        "smokingStatus": "Never smoked",
+        "alcoholConsumption": "Social (occasional)",
+        "bmi": 20.5,
+        "underwritingClass": "Preferred Plus",
+        "mortalityRating": 70,
+        "riskScore": 0.25,
+        "lastMedicalExam": "2024-05-10",
+        "examResultsHash": "2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a",
+        "attendingPhysician": "Dr. Salome Tjikuua, Rhino Park Medical Centre",
+        "consentDate": "2024-05-12",
+        "consentExpiry": "2029-05-12"
+      },
+      "timestamp": "2024-05-15T11:45:00Z"
+    }
+  ]
+}

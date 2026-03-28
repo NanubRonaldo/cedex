@@ -1,0 +1,155 @@
+Organizations:
+
+  - &OrdererOrg
+    Name: OrdererMSP
+    ID: OrdererMSP
+    MSPDir: crypto-config/ordererOrganizations/cedex.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('OrdererMSP.member')"
+      Writers:
+        Type: Signature
+        Rule: "OR('OrdererMSP.member')"
+      Admins:
+        Type: Signature
+        Rule: "OR('OrdererMSP.admin')"
+
+  - &InsurerOrg
+    Name: InsurerMSP
+    ID: InsurerMSP
+    MSPDir: crypto-config/peerOrganizations/insurer.cedex.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('InsurerMSP.member')"
+      Writers:
+        Type: Signature
+        Rule: "OR('InsurerMSP.member')"
+      Admins:
+        Type: Signature
+        Rule: "OR('InsurerMSP.admin')"
+      Endorsement:
+        Type: Signature
+        Rule: "OR('InsurerMSP.member')"
+    AnchorPeers:
+      - Host: peer0.insurer.cedex.com
+        Port: 7051
+
+  - &LenderOrg
+    Name: LenderMSP
+    ID: LenderMSP
+    MSPDir: crypto-config/peerOrganizations/lender.cedex.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('LenderMSP.member')"
+      Writers:
+        Type: Signature
+        Rule: "OR('LenderMSP.member')"
+      Admins:
+        Type: Signature
+        Rule: "OR('LenderMSP.admin')"
+      Endorsement:
+        Type: Signature
+        Rule: "OR('LenderMSP.member')"
+    AnchorPeers:
+      - Host: peer0.lender.cedex.com
+        Port: 7051
+
+Capabilities:
+  Channel: &ChannelCapabilities
+    V2_0: true
+  Orderer: &OrdererCapabilities
+    V2_0: true
+  Application: &ApplicationCapabilities
+    V2_0: true
+
+Application: &ApplicationDefaults
+  Organizations:
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+    LifecycleEndorsement:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Endorsement"
+    Endorsement:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Endorsement"
+  Capabilities:
+    <<: *ApplicationCapabilities
+
+Orderer: &OrdererDefaults
+  OrdererType: etcdraft
+  Addresses:
+    - orderer.cedex.com:7050
+  EtcdRaft:
+    Consenters:
+      - Host: orderer.cedex.com
+        Port: 7050
+        ClientTLSCert: crypto-config/ordererOrganizations/cedex.com/orderers/orderer.cedex.com/tls/server.crt
+        ServerTLSCert: crypto-config/ordererOrganizations/cedex.com/orderers/orderer.cedex.com/tls/server.crt
+  BatchTimeout: 2s
+  BatchSize:
+    MaxMessageCount: 10
+    AbsoluteMaxBytes: 99 MB
+    PreferredMaxBytes: 512 KB
+  Organizations:
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+    BlockValidation:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+  Capabilities:
+    <<: *OrdererCapabilities
+
+Channel: &ChannelDefaults
+  Policies:
+    Readers:
+      Type: ImplicitMeta
+      Rule: "ANY Readers"
+    Writers:
+      Type: ImplicitMeta
+      Rule: "ANY Writers"
+    Admins:
+      Type: ImplicitMeta
+      Rule: "MAJORITY Admins"
+  Capabilities:
+    <<: *ChannelCapabilities
+
+Profiles:
+  TwoOrgsOrdererGenesis:
+    <<: *ChannelDefaults
+    Orderer:
+      <<: *OrdererDefaults
+      Organizations:
+        - *OrdererOrg
+    Consortiums:
+      CedexConsortium:
+        Organizations:
+          - *InsurerOrg
+          - *LenderOrg
+
+  TwoOrgsChannel:
+    <<: *ChannelDefaults
+    Consortium: CedexConsortium
+    Application:
+      <<: *ApplicationDefaults
+      Organizations:
+        - *InsurerOrg
+        - *LenderOrg

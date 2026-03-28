@@ -1,0 +1,50 @@
+[
+  {
+    "name": "PolicyholderPrivate",
+    "policy": "OR('InsurerMSP.member')",
+    "requiredPeerCount": 0,
+    "maxPeerCount": 1,
+    "blockToLive": 0,
+    "memberOnlyRead": true,
+    "memberOnlyWrite": true,
+    "endorsementPolicy": {
+      "signaturePolicy": "OR('InsurerMSP.member')"
+    }
+  },
+  {
+    "name": "MedicalUnderwriting",
+    "policy": "OR('InsurerMSP.member')",
+    "requiredPeerCount": 0,
+    "maxPeerCount": 1,
+    "blockToLive": 0,
+    "memberOnlyRead": true,
+    "memberOnlyWrite": true,
+    "endorsementPolicy": {
+      "signaturePolicy": "OR('InsurerMSP.member')"
+    }
+  },
+  {
+    "name": "PremiumPaymentPrivate",
+    "policy": "OR('InsurerMSP.member')",
+    "requiredPeerCount": 0,
+    "maxPeerCount": 1,
+    "blockToLive": 0,
+    "memberOnlyRead": true,
+    "memberOnlyWrite": true,
+    "endorsementPolicy": {
+      "signaturePolicy": "OR('InsurerMSP.member')"
+    }
+  },
+  {
+    "name": "RegulatoryReporting",
+    "policy": "OR('InsurerMSP.member','LenderMSP.member')",
+    "requiredPeerCount": 1,
+    "maxPeerCount": 2,
+    "blockToLive": 0,
+    "memberOnlyRead": true,
+    "memberOnlyWrite": true,
+    "endorsementPolicy": {
+      "signaturePolicy": "OR('InsurerMSP.member','LenderMSP.member')"
+    }
+  }
+]

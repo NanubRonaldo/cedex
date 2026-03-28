@@ -1,0 +1,124 @@
+{
+  "docs": [
+    {
+      "_id": "dispute_DS-001",
+      "policyID": "POL-2024-001",
+      "cessionID": "CES-2024-001",
+      "collection": "DisputeResolution",
+      "data": {
+        "disputeID": "DS-2024-001",
+        "initiator": "Policyholder",
+        "initiatorID": "PH-001",
+        "respondent": "Insurer",
+        "respondentID": "INS-001",
+        "disputeType": "Premium",
+        "description": "Disputed premium increase without notice. Policyholder claims notification was not received.",
+        "evidenceHashes": ["e5a4d3c2b1e0f9a8b7c6d5e4f3a2b1c0", "f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3"],
+        "status": "Resolved",
+        "resolutionDate": "2024-03-10",
+        "outcome": "Policyholder partially successful. Premium adjusted retroactively.",
+        "settlementAmount": 2350,
+        "arbitratorID": "ARB-001",
+        "decision": "Insurer failed to provide adequate notification. Ordered premium refund and adjustment.",
+        "appealDeadline": "2024-03-25"
+      },
+      "timestamp": "2024-03-10T15:30:00Z"
+    },
+    {
+      "_id": "dispute_DS-002",
+      "policyID": "POL-2024-003",
+      "cessionID": "CES-2024-003",
+      "collection": "DisputeResolution",
+      "data": {
+        "disputeID": "DS-2024-002",
+        "initiator": "Lender",
+        "initiatorID": "LND-002",
+        "respondent": "Policyholder",
+        "respondentID": "PH-003",
+        "disputeType": "Cession",
+        "description": "Lender claims cession priority not respected. Another cession was created with higher priority.",
+        "evidenceHashes": ["1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d"],
+        "status": "Mediation",
+        "resolutionDate": null,
+        "outcome": null,
+        "settlementAmount": null,
+        "arbitratorID": "ARB-002",
+        "decision": null,
+        "appealDeadline": "2024-07-15"
+      },
+      "timestamp": "2024-06-15T11:20:00Z"
+    },
+    {
+      "_id": "dispute_DS-003",
+      "policyID": "POL-2024-004",
+      "cessionID": "CES-2024-004",
+      "collection": "DisputeResolution",
+      "data": {
+        "disputeID": "DS-2024-003",
+        "initiator": "Policyholder",
+        "initiatorID": "PH-004",
+        "respondent": "Lender",
+        "respondentID": "LND-003",
+        "disputeType": "Coverage",
+        "description": "Policyholder claims cession amount exceeds available collateral.",
+        "evidenceHashes": ["9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c", "2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a"],
+        "status": "Arbitration",
+        "resolutionDate": null,
+        "outcome": null,
+        "settlementAmount": null,
+        "arbitratorID": "ARB-003",
+        "decision": null,
+        "appealDeadline": "2024-09-30"
+      },
+      "timestamp": "2024-08-20T09:45:00Z"
+    },
+    {
+      "_id": "dispute_DS-004",
+      "policyID": "POL-2024-002",
+      "cessionID": "CES-2024-002",
+      "collection": "DisputeResolution",
+      "data": {
+        "disputeID": "DS-2024-004",
+        "initiator": "Policyholder",
+        "initiatorID": "PH-002",
+        "respondent": "Insurer",
+        "respondentID": "INS-001",
+        "disputeType": "Payout",
+        "description": "Delayed claim payment for critical illness rider. 30-day delay beyond contract terms.",
+        "evidenceHashes": ["8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3"],
+        "status": "Resolved",
+        "resolutionDate": "2024-10-05",
+        "outcome": "Policyholder successful. Interest penalty paid.",
+        "settlementAmount": 125000,
+        "arbitratorID": "ARB-001",
+        "decision": "Insurer liable for breach of contract. Ordered payment plus 8% interest.",
+        "appealDeadline": "2024-10-20"
+      },
+      "timestamp": "2024-10-05T13:15:00Z"
+    },
+    {
+      "_id": "dispute_DS-005",
+      "policyID": "POL-2024-005",
+      "cessionID": "CES-2024-005",
+      "collection": "DisputeResolution",
+      "data": {
+        "disputeID": "DS-2024-005",
+        "initiator": "Lender",
+        "initiatorID": "LND-002",
+        "respondent": "Policyholder",
+        "respondentID": "PH-005",
+        "disputeType": "Default",
+        "description": "Policyholder failed to maintain premium payments. Cession in jeopardy.",
+        "evidenceHashes": ["2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a"],
+        "status": "Open",
+        "resolutionDate": null,
+        "outcome": null,
+        "settlementAmount": null,
+        "arbitratorID": null,
+        "decision": null,
+        "appealDeadline": "2025-01-30"
+      },
+      "timestamp": "2024-12-15T10:00:00Z"
+    }
+  ]
+}

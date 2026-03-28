@@ -1,0 +1,94 @@
+{
+    "name":  "cedex-network",
+    "version":  "1.0.0",
+    "client":  {
+                   "organization":  "InsurerMSP",
+                   "connection":  {
+                                      "timeout":  {
+                                                      "peer":  {
+                                                                   "endorser":  "300"
+                                                               }
+                                                  }
+                                  },
+                   "tlsEnable":  true,
+                   "adminCredential":  {
+                                           "id":  "exploreradmin",
+                                           "password":  "exploreradminpw"
+                                       },
+                   "enableAuthentication":  false
+               },
+    "channels":  {
+                     "cessionchannel":  {
+                                            "orderers":  [
+                                                             "orderer.cedex.com"
+                                                         ],
+                                            "peers":  {
+                                                          "peer0.insurer.cedex.com":  {
+
+                                                                                      },
+                                                          "peer0.lender.cedex.com":  {
+
+                                                                                     }
+                                                      }
+                                        }
+                 },
+    "organizations":  {
+                          "InsurerMSP":  {
+                                             "mspid":  "InsurerMSP",
+                                             "peers":  [
+                                                           "peer0.insurer.cedex.com"
+                                                       ],
+                                             "adminPrivateKey":  {
+                                                                     "path":  "/tmp/crypto/peerOrganizations/insurer.cedex.com/users/User1@insurer.cedex.com/msp/keystore/priv_sk"
+                                                                 },
+                                             "signedCert":  {
+                                                                "path":  "/tmp/crypto/peerOrganizations/insurer.cedex.com/users/User1@insurer.cedex.com/msp/signcerts/User1@insurer.cedex.com-cert.pem"
+                                                            }
+                                         },
+                          "LenderMSP":  {
+                                            "mspid":  "LenderMSP",
+                                            "peers":  [
+                                                          "peer0.lender.cedex.com"
+                                                      ],
+                                            "adminPrivateKey":  {
+                                                                    "path":  "/tmp/crypto/peerOrganizations/lender.cedex.com/users/User1@lender.cedex.com/msp/keystore/priv_sk"
+                                                                },
+                                            "signedCert":  {
+                                                               "path":  "/tmp/crypto/peerOrganizations/lender.cedex.com/users/User1@lender.cedex.com/msp/signcerts/User1@lender.cedex.com-cert.pem"
+                                                           }
+                                        }
+                      },
+    "orderers":  {
+                     "orderer.cedex.com":  {
+                                               "url":  "grpcs://orderer.cedex.com:7050",
+                                               "tlsCACerts":  {
+                                                                  "path":  "/tmp/crypto/ordererOrganizations/cedex.com/orderers/orderer.cedex.com/tls/ca.crt"
+                                                              },
+                                               "grpcOptions":  {
+                                                                   "ssl-target-name-override":  "orderer.cedex.com"
+                                                               }
+                                           }
+                 },
+    "peers":  {
+                  "peer0.insurer.cedex.com":  {
+                                                  "url":  "grpcs://peer0.insurer.cedex.com:7051",
+                                                  "tlsCACerts":  {
+                                                                     "path":  "/tmp/crypto/peerOrganizations/insurer.cedex.com/peers/peer0.insurer.cedex.com/tls/ca.crt"
+                                                                 },
+                                                  "grpcOptions":  {
+                                                                      "ssl-target-name-override":  "peer0.insurer.cedex.com",
+                                                                      "hostnameOverride":  "peer0.insurer.cedex.com"
+                                                                  }
+                                              },
+                  "peer0.lender.cedex.com":  {
+                                                 "url":  "grpcs://peer0.lender.cedex.com:7051",
+                                                 "tlsCACerts":  {
+                                                                    "path":  "/tmp/crypto/peerOrganizations/lender.cedex.com/peers/peer0.lender.cedex.com/tls/ca.crt"
+                                                                },
+                                                 "grpcOptions":  {
+                                                                     "ssl-target-name-override":  "peer0.lender.cedex.com",
+                                                                     "hostnameOverride":  "peer0.lender.cedex.com"
+                                                                 }
+                                             }
+              }
+}

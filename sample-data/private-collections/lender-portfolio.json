@@ -1,0 +1,124 @@
+{
+  "docs": [
+    {
+      "_id": "lender_LND-001_POL-2024-001",
+      "policyID": "POL-2024-001",
+      "cessionID": "CES-2024-001",
+      "collection": "LenderPortfolio",
+      "data": {
+        "lenderID": "LND-001",
+        "lenderName": "Momentum Credit Namibia",
+        "internalCreditScore": 78,
+        "riskAdjustedReturn": 12.5,
+        "expectedDefaultRate": 3.2,
+        "collateralBuffer": 35,
+        "interestRateApplied": 18.5,
+        "feesStructure": "Origination Fee: 3%, Monthly Service: 1.5%",
+        "discountRate": 12,
+        "portfolioWeight": 0.08,
+        "correlationScore": 0.42,
+        "diversificationBenefit": 0.18,
+        "underwriterNotes": "Stable employment, good credit history. Hypertension controlled.",
+        "approvalLevel": "Branch Manager",
+        "reviewDate": "2024-01-20"
+      },
+      "timestamp": "2024-01-20T13:00:00Z"
+    },
+    {
+      "_id": "lender_LND-001_POL-2024-002",
+      "policyID": "POL-2024-002",
+      "cessionID": "CES-2024-002",
+      "collection": "LenderPortfolio",
+      "data": {
+        "lenderID": "LND-001",
+        "lenderName": "Momentum Credit Namibia",
+        "internalCreditScore": 85,
+        "riskAdjustedReturn": 10.2,
+        "expectedDefaultRate": 1.8,
+        "collateralBuffer": 42,
+        "interestRateApplied": 16,
+        "feesStructure": "Origination Fee: 2.5%, Monthly Service: 1.2%",
+        "discountRate": 11.5,
+        "portfolioWeight": 0.05,
+        "correlationScore": 0.35,
+        "diversificationBenefit": 0.22,
+        "underwriterNotes": "Civil servant, excellent repayment history",
+        "approvalLevel": "Credit Committee",
+        "reviewDate": "2024-02-25"
+      },
+      "timestamp": "2024-02-25T15:30:00Z"
+    },
+    {
+      "_id": "lender_LND-002_POL-2024-003",
+      "policyID": "POL-2024-003",
+      "cessionID": "CES-2024-003",
+      "collection": "LenderPortfolio",
+      "data": {
+        "lenderID": "LND-002",
+        "lenderName": "FNB Namibia Microlending",
+        "internalCreditScore": 92,
+        "riskAdjustedReturn": 14.8,
+        "expectedDefaultRate": 1.2,
+        "collateralBuffer": 28,
+        "interestRateApplied": 19,
+        "feesStructure": "Origination Fee: 2%, No monthly fees",
+        "discountRate": 10.8,
+        "portfolioWeight": 0.12,
+        "correlationScore": 0.28,
+        "diversificationBenefit": 0.32,
+        "underwriterNotes": "High-income earner, mining sector. Preferred risk profile.",
+        "approvalLevel": "Senior Credit Analyst",
+        "reviewDate": "2024-03-12"
+      },
+      "timestamp": "2024-03-12T10:15:00Z"
+    },
+    {
+      "_id": "lender_LND-003_POL-2024-004",
+      "policyID": "POL-2024-004",
+      "cessionID": "CES-2024-004",
+      "collection": "LenderPortfolio",
+      "data": {
+        "lenderID": "LND-003",
+        "lenderName": "Capricorn Micro Finance",
+        "internalCreditScore": 55,
+        "riskAdjustedReturn": 22.5,
+        "expectedDefaultRate": 12.5,
+        "collateralBuffer": 55,
+        "interestRateApplied": 24,
+        "feesStructure": "High-risk premium: 5%, Monthly Service: 2.5%",
+        "discountRate": 18,
+        "portfolioWeight": 0.03,
+        "correlationScore": 0.65,
+        "diversificationBenefit": 0.08,
+        "underwriterNotes": "Self-employed, high risk profile. Requires additional collateral.",
+        "approvalLevel": "Risk Committee",
+        "reviewDate": "2024-04-02"
+      },
+      "timestamp": "2024-04-02T09:45:00Z"
+    },
+    {
+      "_id": "lender_LND-002_POL-2024-005",
+      "policyID": "POL-2024-005",
+      "cessionID": "CES-2024-005",
+      "collection": "LenderPortfolio",
+      "data": {
+        "lenderID": "LND-002",
+        "lenderName": "FNB Namibia Microlending",
+        "internalCreditScore": 88,
+        "riskAdjustedReturn": 11.5,
+        "expectedDefaultRate": 2.1,
+        "collateralBuffer": 38,
+        "interestRateApplied": 17.5,
+        "feesStructure": "Origination Fee: 2.5%, Monthly Service: 1.0%",
+        "discountRate": 12.2,
+        "portfolioWeight": 0.07,
+        "correlationScore": 0.39,
+        "diversificationBenefit": 0.21,
+        "underwriterNotes": "Young professional, stable banking employment. Good growth potential.",
+        "approvalLevel": "Credit Analyst",
+        "reviewDate": "2024-05-20"
+      },
+      "timestamp": "2024-05-20T14:30:00Z"
+    }
+  ]
+}

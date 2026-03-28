@@ -1,0 +1,135 @@
+{
+  "docs": [
+    {
+      "_id": "report_REG-001-Q1-2024",
+      "collection": "RegulatoryReporting",
+      "data": {
+        "reportID": "REG-001-Q1-2024",
+        "reportType": "Quarterly Capital Adequacy",
+        "reportPeriod": "Q1 2024",
+        "totalPolicies": 1250,
+        "totalValue": 187500000,
+        "totalCessions": 890,
+        "cessedValue": 62300000,
+        "amlStatus": "Compliant",
+        "kycDocuments": ["ID copies", "Proof of Address", "Income verification"],
+        "sanctionsCheck": true,
+        "concentrationRisk": 0.28,
+        "liquidityRatio": 2.45,
+        "capitalReserve": 15600000,
+        "auditorNotes": "All policies verified. KYC documentation complete.",
+        "reportDate": "2024-04-15",
+        "approvedBy": "NAMFISA_Supervisor_001"
+      },
+      "timestamp": "2024-04-15T16:00:00Z"
+    },
+    {
+      "_id": "report_REG-002-AML-2024",
+      "collection": "RegulatoryReporting",
+      "data": {
+        "reportID": "REG-002-AML-2024",
+        "reportType": "Anti-Money Laundering",
+        "reportPeriod": "H1 2024",
+        "totalPolicies": 1342,
+        "totalValue": 201300000,
+        "totalCessions": 956,
+        "cessedValue": 68400000,
+        "amlStatus": "Compliant",
+        "kycDocuments": ["ID copies", "Proof of Address", "Income verification", "Source of Funds"],
+        "sanctionsCheck": true,
+        "suspiciousActivityReports": 2,
+        "investigationStatus": "Ongoing",
+        "concentrationRisk": 0.31,
+        "liquidityRatio": 2.18,
+        "capitalReserve": 17200000,
+        "auditorNotes": "Two flagged transactions under review. Cooperating with FIU.",
+        "reportDate": "2024-07-10",
+        "approvedBy": "NAMFISA_Compliance_003"
+      },
+      "timestamp": "2024-07-10T14:30:00Z"
+    },
+    {
+      "_id": "report_REG-003-RISK-2024",
+      "collection": "RegulatoryReporting",
+      "data": {
+        "reportID": "REG-003-RISK-2024",
+        "reportType": "Risk Exposure Report",
+        "reportPeriod": "Mid-Year 2024",
+        "totalPolicies": 1420,
+        "totalValue": 213000000,
+        "totalCessions": 1045,
+        "cessedValue": 75600000,
+        "amlStatus": "Compliant",
+        "kycDocuments": ["Standard + Enhanced for high-risk"],
+        "sanctionsCheck": true,
+        "concentrationRisk": 0.34,
+        "liquidityRatio": 1.95,
+        "capitalReserve": 18500000,
+        "riskMetrics": {
+          "creditRisk": 0.42,
+          "marketRisk": 0.18,
+          "operationalRisk": 0.23,
+          "liquidityRisk": 0.15
+        },
+        "auditorNotes": "Risk profile within acceptable limits. Diversification improving.",
+        "reportDate": "2024-07-25",
+        "approvedBy": "NAMFISA_Risk_002"
+      },
+      "timestamp": "2024-07-25T11:00:00Z"
+    },
+    {
+      "_id": "report_REG-004-CONSUMER-2024",
+      "collection": "RegulatoryReporting",
+      "data": {
+        "reportID": "REG-004-CONSUMER-2024",
+        "reportType": "Consumer Protection Report",
+        "reportPeriod": "Q3 2024",
+        "totalPolicies": 1520,
+        "totalValue": 228000000,
+        "totalCessions": 1150,
+        "cessedValue": 83200000,
+        "complaintsReceived": 12,
+        "complaintsResolved": 11,
+        "complaintsPending": 1,
+        "averageResolutionTime": 8,
+        "consumerSatisfaction": 92.5,
+        "redressAmount": 12500,
+        "amlStatus": "Compliant",
+        "auditorNotes": "Improved complaint handling. One case pending arbitration.",
+        "reportDate": "2024-10-05",
+        "approvedBy": "NAMFISA_Consumer_001"
+      },
+      "timestamp": "2024-10-05T09:30:00Z"
+    },
+    {
+      "_id": "report_REG-005-ANNUAL-2024",
+      "collection": "RegulatoryReporting",
+      "data": {
+        "reportID": "REG-005-ANNUAL-2024",
+        "reportType": "Annual Financial & Compliance",
+        "reportPeriod": "FY 2024",
+        "totalPolicies": 1680,
+        "totalValue": 252000000,
+        "totalCessions": 1340,
+        "cessedValue": 97800000,
+        "amlStatus": "Fully Compliant",
+        "kycDocuments": ["All mandatory documents verified"],
+        "sanctionsCheck": true,
+        "financialMetrics": {
+          "totalRevenue": 15800000,
+          "operatingExpenses": 4200000,
+          "netProfit": 6800000,
+          "returnOnAssets": 0.27,
+          "costToIncome": 0.35
+        },
+        "concentrationRisk": 0.29,
+        "liquidityRatio": 2.31,
+        "capitalReserve": 21400000,
+        "auditorNotes": "Clean audit. All regulatory requirements met. Strong growth.",
+        "reportDate": "2025-01-15",
+        "approvedBy": "NAMFISA_Director_001"
+      },
+      "timestamp": "2025-01-15T17:00:00Z"
+    }
+  ]
+}

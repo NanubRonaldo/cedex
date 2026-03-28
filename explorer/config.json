@@ -1,0 +1,10 @@
+{
+  "network-configs": {
+    "test-network": {
+      "name": "cedex-network",
+      "profile": "./connection-profile/test-network.json",
+      "enableAuthentication": false
+    }
+  },
+  "license": "Apache-2.0"
+}

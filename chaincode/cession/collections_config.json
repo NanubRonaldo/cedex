@@ -1,0 +1,26 @@
+[
+  {
+    "name": "LenderPortfolio",
+    "policy": "OR('LenderMSP.member')",
+    "requiredPeerCount": 0,
+    "maxPeerCount": 1,
+    "blockToLive": 0,
+    "memberOnlyRead": true,
+    "memberOnlyWrite": true,
+    "endorsementPolicy": {
+      "signaturePolicy": "OR('LenderMSP.member')"
+    }
+  },
+  {
+    "name": "DisputeResolution",
+    "policy": "OR('InsurerMSP.member','LenderMSP.member')",
+    "requiredPeerCount": 1,
+    "maxPeerCount": 2,
+    "blockToLive": 0,
+    "memberOnlyRead": true,
+    "memberOnlyWrite": true,
+    "endorsementPolicy": {
+      "signaturePolicy": "OR('InsurerMSP.member','LenderMSP.member')"
+    }
+  }
+]

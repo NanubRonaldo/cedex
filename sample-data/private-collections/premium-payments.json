@@ -1,0 +1,122 @@
+{
+  "docs": [
+    {
+      "_id": "payment_PMT-001",
+      "policyID": "POL-2024-001",
+      "collection": "PremiumPaymentPrivate",
+      "data": {
+        "paymentID": "PMT-2024-001",
+        "paymentAmount": 2250,
+        "paymentDate": "2024-02-01",
+        "paymentMethod": "Debit Order",
+        "bankReference": "DBO-202402-12345",
+        "basePremium": 1800,
+        "riderPremiums": {
+          "Critical Illness": 350,
+          "Disability": 100
+        },
+        "totalPremium": 2250,
+        "latePaymentPenalty": 0,
+        "gracePeriodEnd": "2024-02-15",
+        "lapseDate": null,
+        "bankAccountMask": "****1234",
+        "transactionHash": "tx_5a4d3c2b1e0f9a8b7c6d5e4f3a2b1c0d"
+      },
+      "timestamp": "2024-02-01T08:30:00Z"
+    },
+    {
+      "_id": "payment_PMT-002",
+      "policyID": "POL-2024-002",
+      "collection": "PremiumPaymentPrivate",
+      "data": {
+        "paymentID": "PMT-2024-002",
+        "paymentAmount": 1625,
+        "paymentDate": "2024-03-01",
+        "paymentMethod": "Cash Deposit",
+        "bankReference": "DEP-202403-23456",
+        "basePremium": 1300,
+        "riderPremiums": {
+          "Retrenchment": 175,
+          "Education": 150
+        },
+        "totalPremium": 1625,
+        "latePaymentPenalty": 0,
+        "gracePeriodEnd": "2024-03-15",
+        "lapseDate": null,
+        "bankAccountMask": "****5678",
+        "transactionHash": "tx_8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b"
+      },
+      "timestamp": "2024-03-01T11:45:00Z"
+    },
+    {
+      "_id": "payment_PMT-003",
+      "policyID": "POL-2024-003",
+      "collection": "PremiumPaymentPrivate",
+      "data": {
+        "paymentID": "PMT-2024-003",
+        "paymentAmount": 4875,
+        "paymentDate": "2024-04-01",
+        "paymentMethod": "Electronic Transfer",
+        "bankReference": "EFT-202404-34567",
+        "basePremium": 3900,
+        "riderPremiums": {
+          "Critical Illness": 475,
+          "Disability": 350,
+          "Retrenchment": 150
+        },
+        "totalPremium": 4875,
+        "latePaymentPenalty": 0,
+        "gracePeriodEnd": "2024-04-15",
+        "lapseDate": null,
+        "bankAccountMask": "****9012",
+        "transactionHash": "tx_1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d"
+      },
+      "timestamp": "2024-04-01T09:20:00Z"
+    },
+    {
+      "_id": "payment_PMT-004",
+      "policyID": "POL-2024-004",
+      "collection": "PremiumPaymentPrivate",
+      "data": {
+        "paymentID": "PMT-2024-004",
+        "paymentAmount": 985,
+        "paymentDate": "2024-05-01",
+        "paymentMethod": "Cash",
+        "bankReference": "CASH-202405-45678",
+        "basePremium": 850,
+        "riderPremiums": {},
+        "totalPremium": 850,
+        "latePaymentPenalty": 135,
+        "gracePeriodEnd": "2024-04-15",
+        "lapseDate": null,
+        "bankAccountMask": null,
+        "transactionHash": "tx_9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c"
+      },
+      "timestamp": "2024-05-01T15:00:00Z"
+    },
+    {
+      "_id": "payment_PMT-005",
+      "policyID": "POL-2024-005",
+      "collection": "PremiumPaymentPrivate",
+      "data": {
+        "paymentID": "PMT-2024-005",
+        "paymentAmount": 2150,
+        "paymentDate": "2024-06-01",
+        "paymentMethod": "Debit Order",
+        "bankReference": "DBO-202406-56789",
+        "basePremium": 1720,
+        "riderPremiums": {
+          "Critical Illness": 280,
+          "Disability": 150
+        },
+        "totalPremium": 2150,
+        "latePaymentPenalty": 0,
+        "gracePeriodEnd": "2024-06-15",
+        "lapseDate": null,
+        "bankAccountMask": "****3456",
+        "transactionHash": "tx_2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a"
+      },
+      "timestamp": "2024-06-01T10:00:00Z"
+    }
+  ]
+}

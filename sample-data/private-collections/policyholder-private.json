@@ -1,0 +1,124 @@
+{
+  "docs": [
+    {
+      "_id": "policyholder_PH-001",
+      "policyID": "POL-2024-001",
+      "collection": "PolicyholderPrivate",
+      "data": {
+        "idNumber": "890101-5001-123",
+        "passportNumber": "N1234567",
+        "dateOfBirth": "1989-01-01",
+        "physicalAddress": "Erf 123, Khomasdal, Windhoek, Namibia",
+        "emailAddress": "john.mwatile@cedex.com.na",
+        "phoneNumber": "+264-81-123-4567",
+        "bankAccount": "62234567890",
+        "taxId": "1234567890",
+        "creditScore": 720,
+        "incomeLevel": "Middle",
+        "employerName": "Namibia Breweries Limited",
+        "employmentStatus": "Permanent",
+        "yearsEmployed": 8,
+        "monthlyIncome": 45000,
+        "dependents": 3,
+        "maritalStatus": "Married"
+      },
+      "timestamp": "2024-01-15T10:30:00Z"
+    },
+    {
+      "_id": "policyholder_PH-002",
+      "policyID": "POL-2024-002",
+      "collection": "PolicyholderPrivate",
+      "data": {
+        "idNumber": "850605-2002-456",
+        "passportNumber": "N2345678",
+        "dateOfBirth": "1985-06-05",
+        "physicalAddress": "House 45, Oshakati Extension, Oshana Region",
+        "emailAddress": "helena.simon@cedex.com.na",
+        "phoneNumber": "+264-81-234-5678",
+        "bankAccount": "62245678901",
+        "taxId": "2345678901",
+        "creditScore": 680,
+        "incomeLevel": "Lower-Middle",
+        "employerName": "Government of Namibia",
+        "employmentStatus": "Civil Servant",
+        "yearsEmployed": 12,
+        "monthlyIncome": 32000,
+        "dependents": 4,
+        "maritalStatus": "Married"
+      },
+      "timestamp": "2024-02-20T14:15:00Z"
+    },
+    {
+      "_id": "policyholder_PH-003",
+      "policyID": "POL-2024-003",
+      "collection": "PolicyholderPrivate",
+      "data": {
+        "idNumber": "920312-3003-789",
+        "passportNumber": "N3456789",
+        "dateOfBirth": "1992-03-12",
+        "physicalAddress": "Unit 8, Swakopmund Towers, Swakopmund",
+        "emailAddress": "thomas.kamati@cedex.com.na",
+        "phoneNumber": "+264-81-345-6789",
+        "bankAccount": "62256789012",
+        "taxId": "3456789012",
+        "creditScore": 750,
+        "incomeLevel": "Upper-Middle",
+        "employerName": "Debmarine Namibia",
+        "employmentStatus": "Permanent",
+        "yearsEmployed": 5,
+        "monthlyIncome": 85000,
+        "dependents": 2,
+        "maritalStatus": "Single"
+      },
+      "timestamp": "2024-03-10T09:45:00Z"
+    },
+    {
+      "_id": "policyholder_PH-004",
+      "policyID": "POL-2024-004",
+      "collection": "PolicyholderPrivate",
+      "data": {
+        "idNumber": "880719-4004-234",
+        "passportNumber": "N4567890",
+        "dateOfBirth": "1988-07-19",
+        "physicalAddress": "Erf 567, Ongwediva, Oshana Region",
+        "emailAddress": "martha.ndapanda@cedex.com.na",
+        "phoneNumber": "+264-81-456-7890",
+        "bankAccount": "62267890123",
+        "taxId": "4567890123",
+        "creditScore": 645,
+        "incomeLevel": "Lower",
+        "employerName": "Self-Employed (Retail)",
+        "employmentStatus": "Self-Employed",
+        "yearsEmployed": 10,
+        "monthlyIncome": 18000,
+        "dependents": 5,
+        "maritalStatus": "Widowed"
+      },
+      "timestamp": "2024-04-05T11:20:00Z"
+    },
+    {
+      "_id": "policyholder_PH-005",
+      "policyID": "POL-2024-005",
+      "collection": "PolicyholderPrivate",
+      "data": {
+        "idNumber": "950515-5005-567",
+        "passportNumber": "N5678901",
+        "dateOfBirth": "1995-05-15",
+        "physicalAddress": "Room 12, Katutura Youth Hostel, Windhoek",
+        "emailAddress": "elizabeth.mukwanga@cedex.com.na",
+        "phoneNumber": "+264-81-567-8901",
+        "bankAccount": "62278901234",
+        "taxId": "5678901234",
+        "creditScore": 690,
+        "incomeLevel": "Lower-Middle",
+        "employerName": "Standard Bank Namibia",
+        "employmentStatus": "Permanent",
+        "yearsEmployed": 2,
+        "monthlyIncome": 28000,
+        "dependents": 1,
+        "maritalStatus": "Single"
+      },
+      "timestamp": "2024-05-18T16:00:00Z"
+    }
+  ]
+}
